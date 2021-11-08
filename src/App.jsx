@@ -5,18 +5,12 @@ import { Link } from "react-router-dom";
 
 import routes from "./routers/routes";
 import Routes from "./components/Routes";
+import Header from "./components/header/Header";
 
 const App = () => {
     return (
         <div>
-            <ul>
-                <li>
-                    <Link to={routes.home}>Homepage</Link>
-                </li>
-                <li>
-                    <Link to={routes.cinemaLocation}>Cinema Location</Link>
-                </li>
-            </ul>
+            <Header />
 
             <Routes />
         </div>
