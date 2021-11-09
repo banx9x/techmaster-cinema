@@ -1,0 +1,1 @@
+export default () => <h1>Early films</h1>

@@ -5,6 +5,7 @@ import Events from "../pages/events/Events";
 import Tickets from "../pages/tickets/Tickets"
 import ShowCinema from "../pages/showcinema/ShowCinema";
 import routes from "./routes";
+import FilmLocation from "../pages/filmLocation/FilmLocation";
 
 const routeConfig = [
     {
@@ -30,6 +31,10 @@ const routeConfig = [
     {
         path: routes.showCinema,
         component: ShowCinema,
+    }
+    ,{
+        path: routes.filmLocation,
+        component: FilmLocation
     }
 ];
 

@@ -1,1 +1,14 @@
-export default () => <h1>Homepage by Tu Meo</h1>;
+import styled from "styled-components";
+import Banner from "../../components/Banner";
+import FilmTabsNav from "../../components/film/FilmTabs";
+import Header from "../../components/Header";
+
+
+const Home = () => (
+    <>
+    <Banner />
+    <FilmTabsNav/>
+    </>
+);
+
+export default Home;

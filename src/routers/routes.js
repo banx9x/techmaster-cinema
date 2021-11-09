@@ -4,7 +4,8 @@ const routes = {
     showtimes: "/movie-showtime",
     events: "/events",
     tickets: "/tickets",
-    showCinema : "/show-cinema"
+    showCinema : "/show-cinema",
+    filmLocation : "/film-location"
 };
 
 export default routes;
