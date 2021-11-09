@@ -1,1 +1,1 @@
-export default () => <h1>Ticket</h1>
+export default () => <h1>Vé của tôi</h1>

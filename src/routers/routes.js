@@ -5,7 +5,10 @@ const routes = {
     events: "/events",
     tickets: "/tickets",
     showCinema : "/show-cinema",
-    filmLocation : "/film-location"
+    filmLocation : "/film-location",
+    policy: "/policy",
+    cineplexelList: "/cineplexel-list",
+    advertisingContact: "/advertising-contact"
 };
 
 export default routes;

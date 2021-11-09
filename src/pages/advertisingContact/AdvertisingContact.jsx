@@ -1,0 +1,1 @@
+export default () => <h1>Liên hệ quảng cáo</h1>

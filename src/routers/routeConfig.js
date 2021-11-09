@@ -6,6 +6,9 @@ import Tickets from "../pages/tickets/Tickets"
 import ShowCinema from "../pages/showcinema/ShowCinema";
 import routes from "./routes";
 import FilmLocation from "../pages/filmLocation/FilmLocation";
+import Policy from "../pages/policy/Policy";
+import CineplexeList from "../pages/cineplexeLists/CineplexeList";
+import AdvertisingContact from "../pages/advertisingContact/AdvertisingContact";
 
 const routeConfig = [
     {
@@ -35,6 +38,18 @@ const routeConfig = [
     ,{
         path: routes.filmLocation,
         component: FilmLocation
+    },
+    {
+        path: routes.policy,
+        component: Policy,
+    },
+    {
+        path: routes.cineplexelList,
+        component: CineplexeList,
+    },
+    {
+        path: routes.advertisingContact,
+        component: AdvertisingContact,
     }
 ];
 

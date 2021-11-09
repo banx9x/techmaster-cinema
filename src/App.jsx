@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import routes from "./routers/routes";
 import Routes from "./components/Routes";
 import Header from "./components/Header";
+import Footer from "./components/Footer"
 import styled from "styled-components";
 const Content = styled.div`
   box-sizing: border-box;
@@ -30,6 +31,7 @@ const App = () => {
           <Routes />
         </Content_Container>
       </Content>
+      <Footer/>
     </div>
   );
 };

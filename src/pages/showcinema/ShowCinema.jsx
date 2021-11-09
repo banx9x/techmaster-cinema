@@ -1,1 +1,1 @@
-export default () => <h1>Show Cinema</h1>
+export default () => <h1>Lịch  chiếu phim theo rạp</h1>

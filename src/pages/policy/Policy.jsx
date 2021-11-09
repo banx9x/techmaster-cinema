@@ -1,0 +1,1 @@
+export default () => <h1>Chính sách</h1>
