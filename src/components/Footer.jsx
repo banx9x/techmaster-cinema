@@ -20,6 +20,7 @@ const FooterWrap = styled.div`
     }
     .logo-img {
       padding-bottom: 40px;
+      display: block;
     }
   }
   .link_col {
@@ -47,9 +48,9 @@ const Footer = () => (
   <FooterWrap>
     <FooterContainer>
       <div className="footer-social">
-        <div className="logo-img">
+        <Link to="/" className="logo-img">
           <img src={logo} />
-        </div>
+        </Link>
         <div className="social-img">
           <img src={social} />
         </div>
