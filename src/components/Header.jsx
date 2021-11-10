@@ -47,19 +47,19 @@ const Logo = styled.h1`
 `;
 
 const MenuNav = styled.ul`
-display: flex;
-align-items: center;
-justify-content: space-between;
-box-sizing: border-box;
-width: 60%;
-padding: 0 5%;
-`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 60%;
+  padding: 0 5%;
+`;
 const MenuItem = styled.li`
-  a{
+  a {
     font: 600 22px SourceSansPro;
-        text-transform: uppercase;
+    text-transform: uppercase;
   }
-`
+`;
 const Header = () => {
   return (
     <HeaderWrap>

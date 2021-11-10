@@ -9,7 +9,7 @@ import FilmLocation from "../pages/filmLocation/FilmLocation";
 import Policy from "../pages/policy/Policy";
 import CineplexeList from "../pages/cineplexeLists/CineplexeList";
 import AdvertisingContact from "../pages/advertisingContact/AdvertisingContact";
-
+import FilmCinema from "../pages/filmCinema/FilmCinema"
 const routeConfig = [
     {
         path: routes.home,
@@ -50,6 +50,10 @@ const routeConfig = [
     {
         path: routes.advertisingContact,
         component: AdvertisingContact,
+    },
+    {
+        path: routes.filmCinema,
+        component: FilmCinema,
     }
 ];
 
