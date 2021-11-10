@@ -7,20 +7,23 @@ import routes from "./routers/routes";
 import Routes from "./components/Routes";
 
 const App = () => {
-    return (
-        <div>
-            <ul>
-                <li>
-                    <Link to={routes.home}>Homepage</Link>
-                </li>
-                <li>
-                    <Link to={routes.cinemaLocation}>Cinema Location</Link>
-                </li>
-            </ul>
+  return (
+    <div>
+      <ul>
+        <li>
+          <Link to={routes.home}>Homepage</Link>
+        </li>
+        <li>
+          <Link to={routes.cinemaLocation}>Cinema Location</Link>
+        </li>
+        <li>
+          <Link to={routes.bookingSeat}>Booking Seat</Link>
+        </li>
+      </ul>
 
-            <Routes />
-        </div>
-    );
+      <Routes />
+    </div>
+  );
 };
 
 export default App;

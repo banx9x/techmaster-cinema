@@ -12,6 +12,17 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../src/assets/fonts/SourceSansPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../src/assets/fonts/SourceSansPro-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
 
 .App-header {
   background-color: #282c34;
