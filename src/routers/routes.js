@@ -1,7 +1,7 @@
 const routes = {
-  home: "/",
-  cinemaLocation: "/location",
-  bookingSeat: "/bookingSeat",
+    home: "/",
+    cinemaLocation: "/location",
+    booking: "/booking",
 };
 
 export default routes;
