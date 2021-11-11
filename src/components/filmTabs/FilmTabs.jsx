@@ -1,5 +1,5 @@
-import ShowingFilms from "./ShowingFilms";
-import { Tabs, Tab, Button } from "react-bootstrap";
+import { ShowingFilms } from "./ShowingFilms";
+import { Tabs, Tab} from "react-bootstrap";
 import ComingFilms from "./ComingFilms";
 import EarlyFilms from "./EarlyFilms";
 import styled from "styled-components";
