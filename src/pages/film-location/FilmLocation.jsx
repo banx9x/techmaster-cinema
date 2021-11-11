@@ -7,7 +7,7 @@ import {
   DateText,
   FilmDateTabs,
 } from "../../components/FilmDateTabs";
-import SelectAreaList from "../../components/SelectAreaList";
+import { SelectAreaList } from "../../components/SelectAreaList";
 
 const FilmContainer = styled.div`
   display: flex;
@@ -45,10 +45,11 @@ const AreaTitle = styled.div`
   font: 600 20px SourceSansPro;
   margin-right: 30px;
 `;
+
 const FilmLocation = () => {
   const filmId = useParams();
   const film = films.find((f) => f.id == filmId.id);
-
+  console.log(film)
   return (
     <FilmContainer>
       <FilmLocationInfo film={film} />
@@ -63,4 +64,4 @@ const FilmLocation = () => {
   );
 };
 
-export default FilmLocation;
+export  {FilmContainer, FilmBooking, FilmDateTabs, SelectArea, AreaTitle, FilmLocation};

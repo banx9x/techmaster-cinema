@@ -89,7 +89,7 @@ const FilmLocationInfo = (props) => (
       <FilmBtn style={{ backgroundColor: props.film.buttonColor }}>C16</FilmBtn>
       <img src={props.film.img} />
     </FilmImg>
-    <FilmTitle>The Conjuring: Ma xui Quỷ khiến</FilmTitle>
+    <FilmTitle>{props.film.title}</FilmTitle>
     <table>
       <tbody>
         <Category>

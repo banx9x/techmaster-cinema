@@ -1,67 +1,69 @@
+import { Card } from "react-bootstrap";
+import { BiChevronRight } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import next from "../assets/images/next.png";
 import routes from "../routers/routes";
 
-const SelectChoice = styled(Link)`
+const Select = styled(Card)`
   margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 45px;
-  width: 100%;
+  background: unset;
+  border: 0;
+`;
+const SelectHeader = styled.div`
+  padding: 8px 20px;
   background-color: #fff;
   border: 1px solid #8c8c8d;
-  border-radius: 10px;
-  padding: 0 20px;
-  .select-choice {
-    &__title {
-      font: 400 18px SourceSansPro;
-    }
-    &__icon {
-      width: 10px;
-      img {
-        width: 100%;
-      }
-    }
+  border-radius: 10px !important;
+  a {
+    font: 400 18px SourceSansPro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  svg {
+    font-size: 28px;
   }
 `;
-const SelectAreaList = () => (
-  <>
-    <SelectChoice to={routes.filmCinema}>
-      <div className="select-choice__title">Hà Nội</div>
-      <div className="select-choice__icon">
-        <img src={next} alt="next-icon" />
-      </div>
-    </SelectChoice>
 
-    <SelectChoice to={routes.filmCinema}>
-      <div className="select-choice__title">TP Hồ Chí Minh</div>
-      <div className="select-choice__icon">
-        <img src={next} alt="next-icon" />
-      </div>
-    </SelectChoice>
+const SelectAreaList = () => {
+  return (
+    <>
+      <Select>
+        <SelectHeader to={routes.filmCinema}>
+          <Link to={routes.filmCinema}>
+            Hà Nội
+            <BiChevronRight />
+          </Link>
+        </SelectHeader>
+      </Select>
 
-    <SelectChoice to={routes.filmCinema}>
-      <div className="select-choice__title">Đà Nẵng</div>
-      <div className="select-choice__icon">
-        <img src={next} alt="next-icon" />
-      </div>
-    </SelectChoice>
+      <Select>
+        <SelectHeader to={routes.filmCinema}>
+          <Link to={routes.filmCinema}>
+            Thành Phố Hồ Chí Minh
+            <BiChevronRight />
+          </Link>
+        </SelectHeader>
+      </Select>
 
-    <SelectChoice to={routes.filmCinema}>
-      <div className="select-choice__title">Hà Nội</div>
-      <div className="select-choice__icon">
-        <img src={next} alt="next-icon" />
-      </div>
-    </SelectChoice>
+      <Select>
+        <SelectHeader to={routes.filmCinema}>
+          <Link to={routes.filmCinema}>
+            Đà Nẵng
+            <BiChevronRight />
+          </Link>
+        </SelectHeader>
+      </Select>
 
-    <SelectChoice to={routes.filmCinema}>
-      <div className="select-choice__title">Đà Nẵng</div>
-      <div className="select-choice__icon">
-        <img src={next} alt="next-icon" />
-      </div>
-    </SelectChoice>
-  </>
-);
-export default SelectAreaList;
+      <Select>
+        <SelectHeader to={routes.filmCinema}>
+          Hà Nội
+          <BiChevronRight />
+        </SelectHeader>
+      </Select>
+    </>
+  );
+};
+export { SelectHeader, Select, SelectAreaList };

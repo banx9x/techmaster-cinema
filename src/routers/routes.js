@@ -9,7 +9,8 @@ const routes = {
     policy: "/policy",
     cineplexelList: "/cineplexel-list",
     advertisingContact: "/advertising-contact",
-    filmCinema: "/film-cinema"
+    filmCinema: "/film-cinema",
+    bookingSeat: "/booking-seat",
 };
 
 export default routes;
