@@ -1,0 +1,1 @@
+export default () => <h1>Lịch  chiếu phim theo rạp</h1>

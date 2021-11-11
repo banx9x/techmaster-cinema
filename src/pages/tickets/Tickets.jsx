@@ -1,0 +1,1 @@
+export default () => <h1>Vé của tôi</h1>

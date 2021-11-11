@@ -1,0 +1,1 @@
+export default () => <h1>Danh sách cụm rạp</h1>
