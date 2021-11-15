@@ -2,14 +2,16 @@ import Home from "../pages/home/Home";
 import Location from "../pages/location/Location";
 import Showtimes from "../pages/showtimes/Showtimes";
 import Events from "../pages/events/Events";
-import Tickets from "../pages/tickets/Tickets"
+import Tickets from "../pages/tickets/Tickets";
 import ShowCinema from "../pages/showcinema/ShowCinema";
 import routes from "./routes";
 import FilmLocation from "../pages/filmLocation/FilmLocation";
 import Policy from "../pages/policy/Policy";
 import CineplexeList from "../pages/cineplexeLists/CineplexeList";
 import AdvertisingContact from "../pages/advertisingContact/AdvertisingContact";
-import FilmCinema from "../pages/filmCinema/FilmCinema"
+import FilmCinema from "../pages/filmCinema/FilmCinema";
+import BookingSeat from "../pages/booking_seat/BookingSeat";
+
 const routeConfig = [
     {
         path: routes.home,
@@ -34,10 +36,10 @@ const routeConfig = [
     {
         path: routes.showCinema,
         component: ShowCinema,
-    }
-    ,{
+    },
+    {
         path: routes.filmLocation,
-        component: FilmLocation
+        component: FilmLocation,
     },
     {
         path: routes.policy,
@@ -54,7 +56,11 @@ const routeConfig = [
     {
         path: routes.filmCinema,
         component: FilmCinema,
-    }
+    },
+    {
+        path: routes.bookingSeat,
+        component: BookingSeat,
+    },
 ];
 
 export default routeConfig;

@@ -4,12 +4,13 @@ const routes = {
     showtimes: "/movie-showtime",
     events: "/events",
     tickets: "/tickets",
-    showCinema : "/show-cinema",
-    filmLocation : "/film-location/:id",
+    showCinema: "/show-cinema",
+    filmLocation: "/film-location/:id",
     policy: "/policy",
     cineplexelList: "/cineplexel-list",
     advertisingContact: "/advertising-contact",
-    filmCinema: "/film-cinema"
+    filmCinema: "/film-cinema",
+    bookingSeat: "/booking-seat",
 };
 
 export default routes;
