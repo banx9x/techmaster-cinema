@@ -45,34 +45,46 @@ for (let i = 0; i < 9; i++) {
     seatData.push(rowSeat);
 }
 
-console.log(seatData);
-const SeatItem = ({ id, type, title }, isChecked) => {
+const SeatItem = ({ type, title }) => {
+    const [isActive, setIsActive] = useState(true);
+
+    const handleToggle = () => {
+        setIsActive(!isActive);
+    };
     if (type == "normal") {
         return (
-            <Seat normal onClick={() => isChecked(id)}>
+            <Seat normal onClick={handleToggle} className={`${isActive ? "" : "isChecked"}`}>
                 <span>{title}</span>
             </Seat>
         );
     }
     if (type == "vip") {
         return (
-            <Seat vip onClick={() => isChecked(id)}>
+            <Seat vip onClick={handleToggle} className={`${isActive ? "" : "isChecked"}`}>
                 <span>{title}</span>
             </Seat>
         );
     }
     return null;
 };
-export default () => {
+
+const SeatState = () => {
+    const [seats, setSeats] = useState(seatData);
+
     return (
         <>
-            {seatData.map((seatData, index) => (
-                <SeatLayoutRow key={index}>
-                    {seatData.map((r) => (
-                        <SeatItem key={r.id} title={r.title} type={r.type} />
-                    ))}
-                </SeatLayoutRow>
-            ))}
+            {seats.map((s2, index) => {
+                return (
+                    <SeatLayoutRow key={index}>
+                        {s2.map((r) => {
+                            console.log(r);
+                            return <SeatItem key={r.id} title={r.title} type={r.type} />;
+                        })}
+                    </SeatLayoutRow>
+                );
+            })}
         </>
     );
 };
+
+export default SeatState;
