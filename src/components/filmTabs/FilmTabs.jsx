@@ -9,7 +9,6 @@ const FilmTabsWrap = styled.div`
 `;
 
 const FilmTabs = styled(Tabs)`
-  width: 700px;
   box-sizing: border-box;
   padding: 0 0 20px 0;
   border-style: solid;
@@ -21,8 +20,6 @@ const FilmTabs = styled(Tabs)`
   margin: 0 auto;
   .nav-item button.nav-link {
     font: 600 18px SourceSansPro;
-    box-sizing: border-box;
-    padding: 0 50px;
     color: #000;
     text-transform: uppercase;
     background-color: unset;

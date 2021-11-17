@@ -6,9 +6,7 @@ const dFlex = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const FilmInfo = styled.div`
-  width: 20%;
-`;
+
 
 const FilmTitle = styled.div`
   font: 600 25px SourceSansPro;
@@ -84,12 +82,12 @@ const Trailer = styled(dFlex)`
   }
 `;
 const FilmLocationInfo = (props) => (
-  <FilmInfo>
+  <>
     <FilmImg>
       <FilmBtn style={{ backgroundColor: props.film.buttonColor }}>C16</FilmBtn>
       <img src={props.film.img} />
     </FilmImg>
-    <FilmTitle>The Conjuring: Ma xui Quỷ khiến</FilmTitle>
+    <FilmTitle>{props.film.title}</FilmTitle>
     <table>
       <tbody>
         <Category>
@@ -109,6 +107,6 @@ const FilmLocationInfo = (props) => (
       <div className="click"> Xem trailer </div>
     </Trailer>
     <FilmText>{props.film.summary}</FilmText>
-  </FilmInfo>
+  </>
 );
 export default FilmLocationInfo;

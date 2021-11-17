@@ -3,12 +3,6 @@ import styled from "styled-components";
 import routes from "../routers/routes";
 import BookBtn from "../components/BookBtn";
 
-const Film = styled.div`
-  width: 33.33%;
-  box-sizing: border-box;
-  padding: 20px 40px 60px 30px;
-`;
-
 const FilmBtn = styled.div`
   height: 25px;
   width: 50px;
@@ -50,8 +44,8 @@ const FilmImgWrap = styled.div`
   }
 `
 const FilmItem = (props) => (
-  <Film className="film">
-    <Link to={`/film-location/${props.film.id}`}>
+  <div>
+    <Link to={`/film-location/film/${props.film.id}`}>
       <FilmImgWrap>
         <FilmBtn style={{ backgroundColor: props.film.buttonColor }}>
           {props.film.button}
@@ -62,6 +56,6 @@ const FilmItem = (props) => (
       <FilmTime> {props.film.time}</FilmTime>
       <BookBtn />
     </Link>
-  </Film>
+  </div>
 );
 export default FilmItem;

@@ -5,11 +5,11 @@ import Events from "../pages/events/Events";
 import Tickets from "../pages/tickets/Tickets";
 import ShowCinema from "../pages/showcinema/ShowCinema";
 import routes from "./routes";
-import FilmLocation from "../pages/filmLocation/FilmLocation";
 import Policy from "../pages/policy/Policy";
 import CineplexeList from "../pages/cineplexeLists/CineplexeList";
 import AdvertisingContact from "../pages/advertisingContact/AdvertisingContact";
-import FilmCinema from "../pages/filmCinema/FilmCinema";
+import  {FilmLocation} from "../pages/film-location/FilmLocation";
+
 import BookingSeat from "../pages/booking_seat/BookingSeat";
 
 const routeConfig = [
@@ -54,13 +54,9 @@ const routeConfig = [
         component: AdvertisingContact,
     },
     {
-        path: routes.filmCinema,
-        component: FilmCinema,
-    },
-    {
         path: routes.bookingSeat,
         component: BookingSeat,
-    },
+    }
 ];
 
 export default routeConfig;
