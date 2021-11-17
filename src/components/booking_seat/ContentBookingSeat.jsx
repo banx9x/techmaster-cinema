@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BookingBanner from "../../components/booking_seat/BookingBanner";
+import BookingBanner from "./BookingBanner";
 import BgScreen from "../../assets/img/bg-screen.png";
 import SeatLayout from "./SeatLayout";
 import SeatNote from "./SeatNote";
@@ -42,7 +42,7 @@ export default () => {
                 </Screen>
                 <SeatLayout></SeatLayout>
                 <SeatNote></SeatNote>
-                <Order></Order>
+                <Order linkBack="film-localtion/1" linkForward="booking-combo"></Order>
             </ContentContainer>
         </Content>
     );

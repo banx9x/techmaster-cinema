@@ -11,6 +11,7 @@ import CineplexeList from "../pages/cineplexeLists/CineplexeList";
 import AdvertisingContact from "../pages/advertisingContact/AdvertisingContact";
 import FilmCinema from "../pages/filmCinema/FilmCinema";
 import BookingSeat from "../pages/booking_seat/BookingSeat";
+import BookingCombo from "../pages/booking_combo/BookingCombo";
 
 const routeConfig = [
     {
@@ -60,6 +61,10 @@ const routeConfig = [
     {
         path: routes.bookingSeat,
         component: BookingSeat,
+    },
+    {
+        path: routes.bookingCombo,
+        component: BookingCombo,
     },
 ];
 

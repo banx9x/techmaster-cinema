@@ -11,6 +11,7 @@ const routes = {
     advertisingContact: "/advertising-contact",
     filmCinema: "/film-cinema",
     bookingSeat: "/booking-seat",
+    bookingCombo: "/booking-combo",
 };
 
 export default routes;
