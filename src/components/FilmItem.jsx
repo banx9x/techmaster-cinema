@@ -3,8 +3,6 @@ import styled from "styled-components";
 import routes from "../routers/routes";
 import BookBtn from "../components/BookBtn";
 
-
-
 const FilmBtn = styled.div`
   height: 25px;
   width: 50px;

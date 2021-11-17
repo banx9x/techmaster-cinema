@@ -2,7 +2,7 @@ import Home from "../pages/home/Home";
 import Location from "../pages/location/Location";
 import Showtimes from "../pages/showtimes/Showtimes";
 import Events from "../pages/events/Events";
-import Tickets from "../pages/tickets/Tickets"
+import Tickets from "../pages/tickets/Tickets";
 import ShowCinema from "../pages/showcinema/ShowCinema";
 import routes from "./routes";
 import Policy from "../pages/policy/Policy";
@@ -36,8 +36,8 @@ const routeConfig = [
     {
         path: routes.showCinema,
         component: ShowCinema,
-    }
-    ,{
+    },
+    {
         path: routes.filmLocation,
         component: FilmLocation,
     },

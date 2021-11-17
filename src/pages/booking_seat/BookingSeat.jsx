@@ -1,1 +1,5 @@
-export default () => <h1>Booking Seat</h1>
+import Content from "../../components/booking_seat/Content";
+
+export default () => {
+    return <Content></Content>;
+};

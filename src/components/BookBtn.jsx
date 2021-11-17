@@ -8,17 +8,17 @@ const BookButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  span {
-    font-family: SourceSansPro;
-    font-size: 22px;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
+  font: 600 22px SourceSansPro;
+  color: #fff;
+  text-transform: uppercase;
+  &:hover{
+    color: #fff!important;
   }
+ 
 `;
 const BookBtn = () => (
   <BookButton>
-    <span>Đặt vé ngay</span>
+    Đặt vé ngay
   </BookButton>
 );
 
