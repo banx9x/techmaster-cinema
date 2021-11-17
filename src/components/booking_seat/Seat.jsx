@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useState, useCallback } from "react";
+import { useState } from "react";
 
 const SeatLayoutRow = styled.div`
     display: flex;

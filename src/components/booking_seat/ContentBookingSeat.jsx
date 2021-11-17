@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import BookingBanner from "./BookingBanner";
-import BgScreen from "../../assets/img/bg-screen.png";
+import BgScreen from "../../assets/images/bg-screen.png";
 import SeatLayout from "./SeatLayout";
 import SeatNote from "./SeatNote";
 import Order from "./Order";

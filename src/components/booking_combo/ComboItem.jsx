@@ -4,6 +4,8 @@ import ComboItemDetail from "./ComboItemDetail";
 import ImgCombo1 from "../../assets/images/combo1.png";
 import ImgCombo2 from "../../assets/images/combo2.png";
 import ImgCombo3 from "../../assets/images/combo3.png";
+import { useState } from "react";
+
 const ComboInfo = styled.div`
     width: 50%;
     box-sizing: border-box;
@@ -51,10 +53,14 @@ const ItemData = [
         itemDetail: "1 bỏng + 1 nước",
     },
 ];
-export default () => {
-    return (
-        <ComboInfo>
-            <ComboImg></ComboImg>
+const ComboItemRender = () => {
+    const [items, setItems] = useState(ItemData);
+
+    return items.map((it) => (
+        <ComboInfo key={it.id}>
+            <ComboItemImg img={it.imgSrc} />
+            <ComboItemDetail name={it.itemName} detail={it.itemDetail} />
         </ComboInfo>
-    );
+    ));
 };
+export default ComboItemRender;

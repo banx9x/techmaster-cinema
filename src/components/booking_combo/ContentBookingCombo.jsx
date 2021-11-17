@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import BookingBanner from "../booking_seat/BookingBanner";
-import BgScreen from "../../assets/img/bg-screen.png";
+import BgScreen from "../../assets/images/bg-screen.png";
 import Order from "../booking_seat/Order";
+import ComboWrap from "./ComboWrap";
 
 const Content = styled.div`
     box-sizing: border-box;
@@ -50,6 +51,7 @@ export default () => {
                     <img src={BgScreen}></img>
                 </Screen>
                 <ComboBanner>COMBO BỎNG NƯỚC</ComboBanner>
+                <ComboWrap></ComboWrap>
                 <Order linkBack="booking-seat" linkForward="invol   "></Order>
             </ContentContainer>
         </Content>

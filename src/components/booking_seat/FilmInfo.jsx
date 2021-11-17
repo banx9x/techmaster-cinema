@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import filmImg from "../../assets/img/poster 1.jpg";
+import filmImg from "../../assets/images/poster 1.jpg";
 
 const FilmInfo = styled.div`
     height: 100%;

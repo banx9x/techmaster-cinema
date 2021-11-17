@@ -1,12 +1,20 @@
 import styled from "styled-components";
 import { useState } from "react";
 import imgPlus from "../../assets/images/plus.png";
-import imgMinus from "../../assets/images/";
+import imgMinus from "../../assets/images/minus-sign.png";
 
 const ComboNav = styled.div`
     display: flex;
     box-sizing: border-box;
     margin-top: 20px;
+    #plus {
+        border-width: 1px;
+        border-radius: 5px 0px 0px 5px;
+    }
+    #minus {
+        border-width: 1px 1px 1px 0px;
+        border-radius: 0px 5px 5px 0px;
+    }
 `;
 const ComboNavNumber = styled.div`
     width: 30px;
@@ -39,14 +47,6 @@ const ComboNavStyle = styled.div`
     justify-content: center;
     box-sizing: border-box;
     cursor: pointer;
-    #plus {
-        border-width: 1px;
-        border-radius: 5px 0px 0px 5px;
-    }
-    #minus {
-        border-width: 1px 1px 1px 0px;
-        border-radius: 0px 5px 5px 0px;
-    }
 `;
 const CountItem = () => {
     const [countItem, setCountItem] = useState(0);
@@ -59,15 +59,13 @@ const CountItem = () => {
                 <span>{countItem}</span>
             </ComboNavNumber>
             <ComboNavStyle id="plus" onClick={upCount}>
-                <img src={imgPlus} />
+                <img src={imgPlus} style={{ width: "10px" }} />
             </ComboNavStyle>
             <ComboNavStyle id="minus" onClick={downCount}>
-                <img src={imgMinus} />
+                <img src={imgMinus} style={{ width: "10px" }} />
             </ComboNavStyle>
         </ComboNav>
     );
 };
 
-export default () => {
-    return CountItem;
-};
+export default CountItem;

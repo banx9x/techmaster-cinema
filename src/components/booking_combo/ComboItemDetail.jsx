@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ComboNav from "./ComboNav";
+import CountItem from "./ComboNav";
 
 const ComboText = styled.div`
     width: 75%;
@@ -27,7 +27,7 @@ export default (props) => {
         <ComboText>
             <ComboName>{props.name}</ComboName>
             <ComboDetail>{props.detail}</ComboDetail>
-            <ComboNav></ComboNav>
+            <CountItem></CountItem>
         </ComboText>
     );
 };

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ComboItem from "./ComboItem";
 
 const ComboWrap = styled.div`
     width: 90%;
@@ -11,5 +12,9 @@ const ComboWrap = styled.div`
 `;
 
 export default () => {
-    return <ComboWrap></ComboWrap>;
+    return (
+        <ComboWrap>
+            <ComboItem></ComboItem>
+        </ComboWrap>
+    );
 };
