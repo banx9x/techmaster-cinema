@@ -9,7 +9,7 @@ import Policy from "../pages/policy/Policy";
 import CineplexeList from "../pages/cineplexeLists/CineplexeList";
 import AdvertisingContact from "../pages/advertisingContact/AdvertisingContact";
 import  {FilmLocation} from "../pages/film-location/FilmLocation";
-import FilmCinema from "../pages/film-cinema/FilmCinema";
+
 import BookingSeat from "../pages/booking_seat/BookingSeat";
 
 const routeConfig = [
@@ -56,10 +56,6 @@ const routeConfig = [
     {
         path: routes.bookingSeat,
         component: BookingSeat,
-    },
-    {
-        path: routes.filmCinema,
-        component: FilmCinema
     }
 ];
 

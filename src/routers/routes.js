@@ -5,7 +5,7 @@ const routes = {
     events: "/events",
     tickets: "/tickets",
     showCinema : "/show-cinema",
-    filmLocation : "/film-location/:id",
+    filmLocation : "/film-location/film/:id",
     policy: "/policy",
     cineplexelList: "/cineplexel-list",
     advertisingContact: "/advertising-contact",

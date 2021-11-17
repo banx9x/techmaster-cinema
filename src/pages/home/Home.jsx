@@ -1,14 +1,24 @@
 import styled from "styled-components";
 import Banner from "../../components/Banner";
 import FilmTabsNav from "../../components/filmTabs/FilmTabs";
-import Header from "../../components/Header";
+import { Col, Container, Row } from "react-bootstrap";
 
-
+const Content = styled.div`
+  padding: 40px 0px;
+`;
 const Home = () => (
-    <>
-    <Banner />
-    <FilmTabsNav/>
-    </>
+  <Content>
+    <Container>
+      <Row className="justify-content-center">
+        <Col lg={9} xs={12}>
+          <>
+            <Banner />
+            <FilmTabsNav />
+          </>
+        </Col>
+      </Row>
+    </Container>
+  </Content>
 );
 
 export default Home;
