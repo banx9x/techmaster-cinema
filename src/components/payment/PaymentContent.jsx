@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import PaymentTotal from "./PaymentTotal";
+
 const PaymentContent = styled.div`
     box-sizing: border-box;
     padding: 40px 0px 200px 0px;
@@ -34,6 +35,7 @@ const PaymentBannerTitle = styled.div`
     align-items: center;
     display: flex;
 `;
+
 export default () => {
     return (
         <PaymentContent>
