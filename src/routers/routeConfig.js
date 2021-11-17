@@ -12,6 +12,7 @@ import AdvertisingContact from "../pages/advertisingContact/AdvertisingContact";
 import FilmCinema from "../pages/filmCinema/FilmCinema";
 import BookingSeat from "../pages/booking_seat/BookingSeat";
 import BookingCombo from "../pages/booking_combo/BookingCombo";
+import Payment from "../pages/payment/Payment";
 
 const routeConfig = [
     {
@@ -65,6 +66,10 @@ const routeConfig = [
     {
         path: routes.bookingCombo,
         component: BookingCombo,
+    },
+    {
+        path: routes.payMent,
+        component: Payment,
     },
 ];
 

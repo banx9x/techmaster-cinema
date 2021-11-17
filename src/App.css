@@ -55,16 +55,6 @@ a:hover {
     color: #d32521;
 }
 
-a:hover span {
-    text-decoration: none;
-    color: #d32521;
-}
-
-a:hover div {
-    text-decoration: none;
-    color: #d32521;
-}
-
 .App-link {
     color: #61dafb;
 }

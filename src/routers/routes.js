@@ -12,6 +12,7 @@ const routes = {
     filmCinema: "/film-cinema",
     bookingSeat: "/booking-seat",
     bookingCombo: "/booking-combo",
+    payMent: "/payment",
 };
 
 export default routes;
