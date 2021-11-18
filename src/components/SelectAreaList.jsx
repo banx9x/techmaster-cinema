@@ -28,7 +28,7 @@ const SelectChoice = styled(Link)`
 `;
 const SelectAreaList = () => (
     <>
-        <SelectChoice to={routes.bookingSeat}>
+        <SelectChoice to={routes.filmCinema}>
             <div className="select-choice__title">Hà Nội</div>
             <div className="select-choice__icon">
                 <img src={next} alt="next-icon" />

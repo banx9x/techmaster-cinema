@@ -52,7 +52,7 @@ export default () => {
                 </Screen>
                 <ComboBanner>COMBO BỎNG NƯỚC</ComboBanner>
                 <ComboWrap></ComboWrap>
-                <Order linkBack="booking-seat" linkForward="invol   "></Order>
+                <Order linkBack="booking-seat" linkForward="payment"></Order>
             </ContentContainer>
         </Content>
     );
