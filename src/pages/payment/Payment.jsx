@@ -1,4 +1,4 @@
-import PaymentContent from "../../components/payment/PaymentContent";
+import PaymentContent from "../../components/payment/ContentPayment";
 
 export default () => {
     return <PaymentContent></PaymentContent>;

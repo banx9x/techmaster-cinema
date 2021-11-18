@@ -42,7 +42,11 @@ export default () => {
                 </Screen>
                 <SeatLayout></SeatLayout>
                 <SeatNote></SeatNote>
-                <Order linkBack="film-localtion/1" linkForward="booking-combo"></Order>
+                <Order
+                    linkBack="film-localtion/1"
+                    linkForward="booking-combo"
+                    show="hidden"
+                ></Order>
             </ContentContainer>
         </Content>
     );

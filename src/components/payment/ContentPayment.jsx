@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import PaymentTotal from "./PaymentTotal";
+import Order from "../booking_seat/Order";
 
 const PaymentContent = styled.div`
     box-sizing: border-box;
@@ -46,6 +47,7 @@ export default () => {
                     </PaymentBannerTitle>
                 </PaymentBanner>
                 <PaymentTotal></PaymentTotal>
+                <Order linkBack="booking-combo" hidden="hidden" show="visible"></Order>
             </PaymentWrap>
         </PaymentContent>
     );

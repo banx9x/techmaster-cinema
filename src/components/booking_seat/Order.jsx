@@ -22,8 +22,8 @@ export default (props) => {
             <NavBack link={props.linkBack}></NavBack>
             <FilmInfo></FilmInfo>
             <LocaltionInfo></LocaltionInfo>
-            <PriceInfo></PriceInfo>
-            <NavForward link={props.linkForward}></NavForward>
+            <PriceInfo show={props.show}></PriceInfo>
+            <NavForward link={props.linkForward} hidden={props.hidden}></NavForward>
         </Order>
     );
 };

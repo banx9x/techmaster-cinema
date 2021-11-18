@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Table, Tr, Tbody, TdCategory, TdCategoryInfo } from "./LocaltionInfo";
+import PaymentBtn from "../payment/PaymentBtn";
 
 const PriceInfo = styled.div`
     box-sizing: border-box;
@@ -12,7 +13,7 @@ const TotalSpan = styled.span`
     color: #d32521;
 `;
 
-export default () => {
+export default (props) => {
     return (
         <PriceInfo>
             <Table>
@@ -33,6 +34,7 @@ export default () => {
                     </Tr>
                 </Tbody>
             </Table>
+            <PaymentBtn show={props.show}></PaymentBtn>
         </PriceInfo>
     );
 };

@@ -22,9 +22,10 @@ const NavBtn = styled.div`
         vertical-align: baseline;
     }
 `;
+
 export default (props) => {
     return (
-        <NavForward>
+        <NavForward style={{ visibility: `${props.hidden}` }}>
             <Link to={`/${props.link}`}>
                 <NavBtn>
                     <img src={navImg} />

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PaymentSumDetail from "./PaymentSumDetail";
 
 const PaymentSum = styled.div`
     width: 40%;
@@ -22,7 +23,10 @@ const SumBanner = styled.div`
 export default () => {
     return (
         <PaymentSum>
-            <SumBanner></SumBanner>
+            <SumBanner>
+                <span>TỔNG CỘNG</span>
+            </SumBanner>
+            <PaymentSumDetail></PaymentSumDetail>
         </PaymentSum>
     );
 };
