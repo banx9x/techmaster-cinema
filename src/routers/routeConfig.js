@@ -8,9 +8,11 @@ import routes from "./routes";
 import Policy from "../pages/policy/Policy";
 import CineplexeList from "../pages/cineplexeLists/CineplexeList";
 import AdvertisingContact from "../pages/advertisingContact/AdvertisingContact";
-import  {FilmLocation} from "../pages/film-location/FilmLocation";
+import { FilmLocation } from "../pages/film-location/FilmLocation";
 
 import BookingSeat from "../pages/booking_seat/BookingSeat";
+import BookingCombo from "../pages/booking_combo/BookingCombo";
+import Payment from "../pages/payment/Payment";
 
 const routeConfig = [
     {
@@ -56,7 +58,15 @@ const routeConfig = [
     {
         path: routes.bookingSeat,
         component: BookingSeat,
-    }
+    },
+    {
+        path: routes.bookingCombo,
+        component: BookingCombo,
+    },
+    {
+        path: routes.payMent,
+        component: Payment,
+    },
 ];
 
 export default routeConfig;

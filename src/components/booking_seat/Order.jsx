@@ -16,14 +16,15 @@ const Order = styled.div`
     margin: 60px 0px 0px 0px;
     border-radius: 10px;
 `;
-export default () => {
+
+export default (props) => {
     return (
         <Order>
-            <NavBack></NavBack>
+            <NavBack link={props.linkBack}></NavBack>
             <FilmInfo></FilmInfo>
             <LocaltionInfo></LocaltionInfo>
-            <PriceInfo></PriceInfo>
-            <NavForward></NavForward>
+            <PriceInfo show={props.show}></PriceInfo>
+            <NavForward link={props.linkForward} hidden={props.hidden}></NavForward>
         </Order>
     );
 };

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import navImg from "../../assets/img/arrow.png";
+import navImg from "../../assets/images/arrow.png";
 
 const NavBack = styled.div`
     height: 100%;
@@ -22,10 +22,10 @@ const NavBtn = styled.div`
         vertical-align: baseline;
     }
 `;
-export default () => {
+export default (props) => {
     return (
         <NavBack>
-            <Link to="/">
+            <Link to={`/${props.link}`}>
                 <NavBtn>
                     <img src={navImg} />
                 </NavBtn>

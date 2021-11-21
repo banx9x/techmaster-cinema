@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import BookingBanner from "../../components/booking_seat/BookingBanner";
-import BgScreen from "../../assets/img/bg-screen.png";
-import SeatLayout from "./SeatLayout";
-import SeatNote from "./SeatNote";
-import Order from "./Order";
+import BookingBanner from "../booking_seat/BookingBanner";
+import BgScreen from "../../assets/images/bg-screen.png";
+import Order from "../booking_seat/Order";
+import ComboWrap from "./ComboWrap";
+import { useParams } from "react-router";
 
 const Content = styled.div`
     box-sizing: border-box;
@@ -31,8 +31,20 @@ const Screen = styled.div`
         width: 100%;
     }
 `;
-
+const ComboBanner = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: SourceSansPro;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    box-sizing: border-box;
+    margin-top: 60px;
+`;
 export default () => {
+    const filmId = useParams();
     return (
         <Content>
             <ContentContainer>
@@ -40,9 +52,13 @@ export default () => {
                 <Screen>
                     <img src={BgScreen}></img>
                 </Screen>
-                <SeatLayout></SeatLayout>
-                <SeatNote></SeatNote>
-                <Order></Order>
+                <ComboBanner>COMBO BỎNG NƯỚC</ComboBanner>
+                <ComboWrap></ComboWrap>
+                <Order
+                    linkBack={`booking-seat/film/${filmId.id}`}
+                    linkForward={`payment/film/${filmId.id}`}
+                    show="hidden"
+                ></Order>
             </ContentContainer>
         </Content>
     );

@@ -71,3 +71,8 @@ a:hover {
 button {
     font-size: calc(10px + 2vmin);
 }
+.isChecked {
+    background-color: #d32521;
+    border-color: #d32521;
+    color: #fff;
+}
