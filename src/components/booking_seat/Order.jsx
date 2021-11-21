@@ -16,6 +16,7 @@ const Order = styled.div`
     margin: 60px 0px 0px 0px;
     border-radius: 10px;
 `;
+
 export default (props) => {
     return (
         <Order>

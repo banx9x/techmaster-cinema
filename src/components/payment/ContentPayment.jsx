@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import PaymentTotal from "./PaymentTotal";
 import Order from "../booking_seat/Order";
+import { useParams } from "react-router";
 
 const PaymentContent = styled.div`
     box-sizing: border-box;
@@ -38,6 +39,7 @@ const PaymentBannerTitle = styled.div`
 `;
 
 export default () => {
+    const filmId = useParams();
     return (
         <PaymentContent>
             <PaymentWrap>
@@ -47,7 +49,11 @@ export default () => {
                     </PaymentBannerTitle>
                 </PaymentBanner>
                 <PaymentTotal></PaymentTotal>
-                <Order linkBack="booking-combo" hidden="hidden" show="visible"></Order>
+                <Order
+                    linkBack={`booking-combo/film/${filmId.id}`}
+                    hidden="hidden"
+                    show="visible"
+                ></Order>
             </PaymentWrap>
         </PaymentContent>
     );

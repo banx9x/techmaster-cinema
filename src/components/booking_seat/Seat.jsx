@@ -77,7 +77,6 @@ const SeatState = () => {
                 return (
                     <SeatLayoutRow key={index}>
                         {s2.map((r) => {
-                            console.log(r);
                             return <SeatItem key={r.id} title={r.title} type={r.type} />;
                         })}
                     </SeatLayoutRow>

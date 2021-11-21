@@ -5,14 +5,14 @@ const routes = {
     events: "/events",
     tickets: "/tickets",
     showCinema: "/show-cinema",
-    filmLocation: "/film-location/:id",
+    filmLocation: "/film-location/film/:id",
     policy: "/policy",
     cineplexelList: "/cineplexel-list",
     advertisingContact: "/advertising-contact",
     filmCinema: "/film-cinema",
-    bookingSeat: "/booking-seat",
-    bookingCombo: "/booking-combo",
-    payMent: "/payment",
+    bookingSeat: "/booking-seat/film/:id",
+    bookingCombo: "/booking-combo/film/:id",
+    payMent: "/payment/film/:id",
 };
 
 export default routes;

@@ -7,7 +7,8 @@ import {
   DateText,
   FilmDateTabs,
 } from "../../components/FilmDateTabs";
-import SelectAreaList from "../../components/SelectAreaList";
+import { SelectAreaList } from "../../components/SelectAreaList";
+import { Col, Container, Row } from "react-bootstrap";
 
 const FilmContainer = styled.div`
   display: flex;
@@ -15,10 +16,12 @@ const FilmContainer = styled.div`
   box-sizing: border-box;
   margin-bottom: 200px;
 `;
+
+const FilmRow = styled(Row)`
+  --bs-gutter-x: 80px;
+  --bs-gutter-y: 80px;
+`
 const FilmBooking = styled.div`
-  width: 70%;
-  box-sizing: border-box;
-  padding: 0 80px;
   .nav {
     border: 0;
     .nav-link {
@@ -45,22 +48,41 @@ const AreaTitle = styled.div`
   font: 600 20px SourceSansPro;
   margin-right: 30px;
 `;
+
 const FilmLocation = () => {
   const filmId = useParams();
   const film = films.find((f) => f.id == filmId.id);
-
+  
+  const Content = styled.div`
+    padding: 40px 0px;
+  `
   return (
-    <FilmContainer>
-      <FilmLocationInfo film={film} />
-      <FilmBooking>
-        <FilmDateTabs />
-        <SelectArea>
-          <AreaTitle>Chọn khu vực</AreaTitle>
-        </SelectArea>
-        <SelectAreaList />
-      </FilmBooking>
-    </FilmContainer>
+   <Content>
+      <Container>
+      <FilmRow>
+        <Col xs={12} lg={3}>
+          <FilmLocationInfo film={film} />
+        </Col>
+        <Col xs={12} lg={9}>
+          <FilmBooking>
+            <FilmDateTabs />
+            <SelectArea>
+              <AreaTitle>Chọn khu vực</AreaTitle>
+            </SelectArea>
+            <SelectAreaList />
+          </FilmBooking>
+        </Col>
+      </FilmRow>
+    </Container>
+   </Content>
   );
 };
 
-export default FilmLocation;
+export {
+  FilmContainer,
+  FilmBooking,
+  FilmDateTabs,
+  SelectArea,
+  AreaTitle,
+  FilmLocation,
+};

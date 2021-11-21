@@ -4,6 +4,8 @@ import BgScreen from "../../assets/images/bg-screen.png";
 import SeatLayout from "./SeatLayout";
 import SeatNote from "./SeatNote";
 import Order from "./Order";
+import { useParams } from "react-router";
+import { films } from "../filmTabs/ShowingFilms";
 
 const Content = styled.div`
     box-sizing: border-box;
@@ -33,6 +35,7 @@ const Screen = styled.div`
 `;
 
 export default () => {
+    const filmId = useParams();
     return (
         <Content>
             <ContentContainer>
@@ -43,8 +46,8 @@ export default () => {
                 <SeatLayout></SeatLayout>
                 <SeatNote></SeatNote>
                 <Order
-                    linkBack="film-localtion/1"
-                    linkForward="booking-combo"
+                    linkBack={`film-location/film/${filmId.id}`}
+                    linkForward={`booking-combo/film/${filmId.id}`}
                     show="hidden"
                 ></Order>
             </ContentContainer>

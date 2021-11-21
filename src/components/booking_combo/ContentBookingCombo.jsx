@@ -3,6 +3,7 @@ import BookingBanner from "../booking_seat/BookingBanner";
 import BgScreen from "../../assets/images/bg-screen.png";
 import Order from "../booking_seat/Order";
 import ComboWrap from "./ComboWrap";
+import { useParams } from "react-router";
 
 const Content = styled.div`
     box-sizing: border-box;
@@ -43,6 +44,7 @@ const ComboBanner = styled.div`
     margin-top: 60px;
 `;
 export default () => {
+    const filmId = useParams();
     return (
         <Content>
             <ContentContainer>
@@ -52,7 +54,11 @@ export default () => {
                 </Screen>
                 <ComboBanner>COMBO BỎNG NƯỚC</ComboBanner>
                 <ComboWrap></ComboWrap>
-                <Order linkBack="booking-seat" linkForward="payment" show="hidden"></Order>
+                <Order
+                    linkBack={`booking-seat/film/${filmId.id}`}
+                    linkForward={`payment/film/${filmId.id}`}
+                    show="hidden"
+                ></Order>
             </ContentContainer>
         </Content>
     );
