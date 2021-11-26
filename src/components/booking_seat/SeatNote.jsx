@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { css } from "styled-components";
+import { Container, Col, Row } from "react-bootstrap";
 
 const SeatNote = styled.div`
     width: 30%;
@@ -62,26 +63,36 @@ const SeatIcon = styled.div`
 export default () => {
     return (
         <SeatNote>
-            <div className="col">
-                <SeatType>
-                    <SeatIcon vip />
-                    <span>Vip</span>
-                </SeatType>
-                <SeatType>
-                    <SeatIcon normal />
-                    <span>Thường</span>
-                </SeatType>
-            </div>
-            <div className="col">
-                <SeatType>
-                    <SeatIcon booked />
-                    <span>Đã được đặt</span>
-                </SeatType>
-                <SeatType>
-                    <SeatIcon checked />
-                    <span>Đang chọn</span>
-                </SeatType>
-            </div>
+            <Container>
+                <Row>
+                    <Col>
+                        <SeatType>
+                            <SeatIcon vip />
+                            <span>Vip</span>
+                        </SeatType>
+                    </Col>
+                    <Col>
+                        <SeatType>
+                            <SeatIcon normal />
+                            <span>Thường</span>
+                        </SeatType>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <SeatType>
+                            <SeatIcon booked />
+                            <span>Đã được đặt</span>
+                        </SeatType>
+                    </Col>
+                    <Col>
+                        <SeatType>
+                            <SeatIcon checked />
+                            <span>Đang chọn</span>
+                        </SeatType>
+                    </Col>
+                </Row>
+            </Container>
         </SeatNote>
     );
 };

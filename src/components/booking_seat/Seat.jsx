@@ -9,19 +9,19 @@ const SeatLayoutRow = styled.div`
     width: 100%;
 `;
 const Seat = styled.div`
-    width: 30px;
-    height: 30px;
+    width: 5%;
     margin: 5px;
     box-sizing: border-box;
     border-style: solid;
     border-width: 2px;
     text-align: center;
     font-family: SourceSansPro;
-    font-size: 14px;
+    font-size: 2.2vmin;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    overflow: hidden;
     border-color: ${(props) => (props.normal ? "#03D457" : props.vip ? "#d32521" : "")};
 `;
 const seatData = [];

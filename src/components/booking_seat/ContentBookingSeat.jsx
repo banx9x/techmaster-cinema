@@ -5,7 +5,7 @@ import SeatLayout from "./SeatLayout";
 import SeatNote from "./SeatNote";
 import Order from "./Order";
 import { useParams } from "react-router";
-import { films } from "../filmTabs/ShowingFilms";
+import { Container } from "react-bootstrap";
 
 const Content = styled.div`
     box-sizing: border-box;
@@ -17,7 +17,7 @@ const Content = styled.div`
     background-color: #f0f0f0;
 `;
 const ContentContainer = styled.div`
-    width: 980px;
+    max-width: 980px;
     padding: 0;
     margin: 0;
     display: flex;
@@ -37,20 +37,24 @@ const Screen = styled.div`
 export default () => {
     const filmId = useParams();
     return (
-        <Content>
-            <ContentContainer>
-                <BookingBanner></BookingBanner>
-                <Screen>
-                    <img src={BgScreen}></img>
-                </Screen>
-                <SeatLayout></SeatLayout>
-                <SeatNote></SeatNote>
-                <Order
-                    linkBack={`film-location/film/${filmId.id}`}
-                    linkForward={`booking-combo/film/${filmId.id}`}
-                    show="hidden"
-                ></Order>
-            </ContentContainer>
-        </Content>
+        <Container>
+            <Content>
+                <ContentContainer>
+                    <BookingBanner></BookingBanner>
+                    <Screen>
+                        <Container>
+                            <img src={BgScreen}></img>
+                        </Container>
+                    </Screen>
+                    <SeatLayout></SeatLayout>
+                    <SeatNote></SeatNote>
+                    <Order
+                        linkBack={`film-location/film/${filmId.id}`}
+                        linkForward={`booking-combo/film/${filmId.id}`}
+                        show="hidden"
+                    ></Order>
+                </ContentContainer>
+            </Content>
+        </Container>
     );
 };

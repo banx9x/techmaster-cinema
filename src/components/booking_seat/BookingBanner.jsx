@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Container } from "react-bootstrap";
 
 const BookingBanner = styled.div`
     width: 100%;
@@ -33,14 +34,16 @@ const BookingBannerDetail = styled.div`
 `;
 export default () => {
     return (
-        <BookingBanner>
-            <BookingBannerTitle>
-                <span>ĐẶT VÉ ONLINE</span>
-            </BookingBannerTitle>
-            <BookingBannerDetail>
-                <div>Vinema Thanh Xuân</div>
-                <div>Phòng chiếu 2, 16/10/2021, 19:00 - 21:08</div>
-            </BookingBannerDetail>
-        </BookingBanner>
+        <Container>
+            <BookingBanner>
+                <BookingBannerTitle>
+                    <span>ĐẶT VÉ ONLINE</span>
+                </BookingBannerTitle>
+                <BookingBannerDetail>
+                    <div>Vinema Thanh Xuân</div>
+                    <div>Phòng chiếu 2, 16/10/2021, 19:00 - 21:08</div>
+                </BookingBannerDetail>
+            </BookingBanner>
+        </Container>
     );
 };
