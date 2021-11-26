@@ -4,6 +4,7 @@ import FilmInfo from "./FilmInfo";
 import LocaltionInfo from "./LocaltionInfo";
 import PriceInfo from "./PriceInfo";
 import NavForward from "./NavForward";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Order = styled.div`
     background-color: #fff;
@@ -19,12 +20,14 @@ const Order = styled.div`
 
 export default (props) => {
     return (
-        <Order>
-            <NavBack link={props.linkBack}></NavBack>
-            <FilmInfo></FilmInfo>
-            <LocaltionInfo></LocaltionInfo>
-            <PriceInfo show={props.show}></PriceInfo>
-            <NavForward link={props.linkForward} hidden={props.hidden}></NavForward>
-        </Order>
+        <Container>
+            <Order>
+                <NavBack link={props.linkBack}></NavBack>
+                <FilmInfo></FilmInfo>
+                <LocaltionInfo></LocaltionInfo>
+                <PriceInfo show={props.show}></PriceInfo>
+                <NavForward link={props.linkForward} hidden={props.hidden}></NavForward>
+            </Order>
+        </Container>
     );
 };

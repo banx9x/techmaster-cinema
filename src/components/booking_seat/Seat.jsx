@@ -16,7 +16,7 @@ const Seat = styled.div`
     border-width: 2px;
     text-align: center;
     font-family: SourceSansPro;
-    font-size: 2.2vmin;
+    font-size: 3.5vmin;
     display: flex;
     align-items: center;
     justify-content: center;

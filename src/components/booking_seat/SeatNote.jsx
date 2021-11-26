@@ -26,6 +26,16 @@ const SeatType = styled.div`
         box-sizing: border-box;
         margin-left: 10px;
     }
+    @media (max-width: 992px) {
+        span {
+            font-family: SourceSansPro;
+            font-size: 14px;
+            font-weight: 800;
+            color: #000;
+            box-sizing: border-box;
+            margin-left: 10px;
+        }
+    }
 `;
 const SeatIcon = styled.div`
     width: 30px;
@@ -34,6 +44,10 @@ const SeatIcon = styled.div`
     box-sizing: border-box;
     border-style: solid;
     border-width: 2px;
+    @media (max-width: 992px) {
+        width: 10px;
+        height: 10px;
+    }
     ${(props) =>
         props.normal &&
         css`
